@@ -15,33 +15,44 @@
         <form action="" onsubmit="return kirimData(event)">
             <label for="nama">Nama</label>
             <input type="text" placeholder="Nama anda" id="nama" required>
-            
+
             <label for="nim">NIM</label>
             <input type="text" placeholder="NIM anda" id="nim" required>
             
             <p>Peminatan pada bidang:</p>
             <div class="radio-group">
                 <div>
-                    <input type="radio" name="pemintatan" id="programming" value="programming" required>
+                    <input type="radio" name="peminatan" id="programming" value="programming" required>
                     <label for="programming">Programming</label>
                 </div>
                 <div>
-                    <input type="radio" name="pemintatan" id="desain" value="desain">
+                    <input type="radio" name="peminatan" id="desain" value="desain">
                     <label for="desain">UI Design</label>
                 </div>
                 <div>
-                    <input type="radio" name="pemintatan" id="jaringan" value="jaringan">
+                    <input type="radio" name="peminatan" id="jaringan" value="jaringan">
                     <label for="jaringan">Networking</label>
                 </div>
                 <div>
-                    <input type="radio" name="pemintatan" id="data" value="data">
+                    <input type="radio" name="peminatan" id="data" value="data">
                     <label for="data">Database</label>
                 </div>
             </div>
-            
+
             <label for="alamat">Alamat</label>
             <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5" required></textarea>
             
+            <label for="angkatan">Pilih Angkatan</label>
+            <select id="angkatan" required>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <label for="tanggal">Tanggal</label>
+            <input type="date" id="tanggal" required>
+
             <button type="submit">Submit</button>
         </form>
     </div>
